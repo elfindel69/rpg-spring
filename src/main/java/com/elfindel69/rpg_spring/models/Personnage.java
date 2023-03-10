@@ -8,9 +8,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.util.ArrayList;
-import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.Set;
 
 
 @Entity
@@ -88,4 +86,38 @@ public class Personnage {
     @ManyToMany(mappedBy = "personnages")
     private List<Competence> competences = new ArrayList<>();
 
+    public void addCorps(int bonus){
+        corps += bonus;
+    }
+
+    public void addEsprit(int bonus){
+        esprit += bonus;
+    }
+
+    public void addRelationnel(int bonus){
+        relationnel += bonus;
+    }
+
+    public void removePcHab(int pts){
+        pcHab -= pts;
+    }
+    public void removePcSpe(int pts){
+        pcSpe -= pts;
+    }
+
+    public void removeArgent(int prix){
+        argent -= prix;
+    }
+
+    public void addVie(int bonusVie){
+        pv += bonusVie;
+    }
+
+    public void addMana(int bonusMana){
+        mana += bonusMana;
+    }
+
+    public void addArmure(int bonus){
+        armure += bonus;
+    }
 }

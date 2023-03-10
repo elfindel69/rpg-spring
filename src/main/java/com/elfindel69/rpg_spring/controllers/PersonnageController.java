@@ -26,7 +26,7 @@ public class PersonnageController {
         return manager.getPersonnage(id);
     }
 
-    @PostMapping("/")
+    @PostMapping("/create")
     Personnage createPersonnage(@RequestBody PersonnageDto dto){
         return manager.createPersonnage(new PersonnageHandler(dto));
     }

@@ -14,10 +14,11 @@ import java.util.List;
 public class SortManagerImpl implements SortManager {
 
     private final SortService sortService;
+
     @Override
     public Sort createSort(final SortHandler handler) {
         Sort sort = new Sort(handler);
-        return sortService.createSort(sort);
+        return sortService.editSort(sort);
     }
 
     @Override

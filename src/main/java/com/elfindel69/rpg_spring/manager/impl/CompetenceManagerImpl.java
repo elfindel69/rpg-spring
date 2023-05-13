@@ -18,16 +18,17 @@ import static com.elfindel69.rpg_spring.enums.TypeCompetence.SPECIALISATION;
 @RequiredArgsConstructor
 public class CompetenceManagerImpl implements CompetenceManager {
     private final CompetenceService competenceService;
+
     @Override
     public Competence createCompetence(CompetenceHandler handler) {
         Competence competence = null;
-        if (handler.getType().equals(HABILETE)){
-            competence = new Habilete(handler.getNom(),handler.getNiveau());
+        if (handler.getType().equals(HABILETE)) {
+            competence = new Habilete(handler.getNom(), handler.getNiveau());
         }
-        if (handler.getType().equals(SPECIALISATION)){
-            competence = new Specialisation(handler.getNom(),handler.getNiveau());
+        if (handler.getType().equals(SPECIALISATION)) {
+            competence = new Specialisation(handler.getNom(), handler.getNiveau());
         }
-        return competenceService.createCompetence(competence);
+        return competenceService.editCompetence(competence);
     }
 
     @Override

@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = {"http://localhost:8080", "http://localhost:4200", "http://localhost"})
+@CrossOrigin(origins = {"http://localhost:8081", "http://localhost:4200", "http://localhost"})
 @RestController
-@RequestMapping(path = "/personnage")
+@RequestMapping(path = "/personnages")
 @AllArgsConstructor
 public class PersonnageController {
 
@@ -32,5 +32,19 @@ public class PersonnageController {
         return manager.createPersonnage(new PersonnageHandler(dto));
     }
 
+    //PUT /personnages/:id add Equipement   (id du personnage, id de l'équipement)
+    @PutMapping("/{id}/addEquip/{idEquipement}")
+    Personnage addEquipement(@PathVariable Long id, @PathVariable Long idEquipement) {
+        return manager.addEquipement(id, idEquipement);
+    }
 
+    @PutMapping("/{id}/addSort/{idSort}")
+    Personnage addSort(@PathVariable Long id, @PathVariable Long idSort) {
+        return manager.addSort(id, idSort);
+    }
+
+    @PutMapping("/{id}/addComp/{idComp}")
+    Personnage addComp(@PathVariable Long id, @PathVariable Long idComp) {
+        return manager.addComp(id, idComp);
+    }
 }

@@ -6,7 +6,7 @@ import com.elfindel69.rpg_spring.models.Personnage;
 import java.util.List;
 
 public interface CompetenceService {
-    Competence createCompetence(Competence competence);
+    Competence editCompetence(Competence competence);
 
     Competence getCompetence(long id);
 

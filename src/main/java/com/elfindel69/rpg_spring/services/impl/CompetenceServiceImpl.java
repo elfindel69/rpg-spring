@@ -14,8 +14,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class CompetenceServiceImpl implements CompetenceService {
     private final CompetenceRepository repository;
+
     @Override
-    public Competence createCompetence(Competence competence) {
+    public Competence editCompetence(Competence competence) {
         return repository.save(competence);
     }
 
@@ -35,10 +36,10 @@ public class CompetenceServiceImpl implements CompetenceService {
     }
 
     @Override
-    public long countHabiletes(Personnage p){
+    public long countHabiletes(Personnage p) {
         return repository.findAll().stream()
                 .filter(c -> c.getType().equals(TypeCompetence.HABILETE)
-                && c.getPersonnages().contains(p))
+                        && c.getPersonnages().contains(p))
                 .count();
     }
 

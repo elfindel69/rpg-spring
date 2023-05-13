@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = {"http://localhost:8080", "http://localhost:4200", "http://localhost"})
+@CrossOrigin(origins = {"http://localhost:8081", "http://localhost:4200", "http://localhost"})
 @RestController
 @RequestMapping(path = "/competence")
 @AllArgsConstructor

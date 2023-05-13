@@ -18,25 +18,25 @@ import java.util.List;
 public class EquipementManagerImpl implements EquipementManager {
 
     private final EquipementService service;
+
     @Override
     public Equipement createEquipement(EquipementHandler handler) {
-       Equipement equip = null;
-        if (handler.getType().equals(TypeEquipement.ARMEMENT)){
-            equip = new Arme(handler.getNom(),handler.getPrix(),handler.getDe(),handler.getModif());
+        Equipement equip = null;
+        if (handler.getType().equals(TypeEquipement.ARMEMENT)) {
+            equip = new Arme(handler.getNom(), handler.getPrix(), handler.getDe(), handler.getModif());
         }
-        if (handler.getType().equals(TypeEquipement.PROTECTION))
-        {
-            equip = new Protection(handler.getNom(),handler.getPrix(),handler.getArmure());
+        if (handler.getType().equals(TypeEquipement.PROTECTION)) {
+            equip = new Protection(handler.getNom(), handler.getPrix(), handler.getArmure());
         }
-        if (handler.getType().equals(TypeEquipement.POTION)){
-            if (handler.getPv() > 0){
-                equip = new PotionVie(handler.getNom(),handler.getPrix(),handler.getPv());
+        if (handler.getType().equals(TypeEquipement.POTION)) {
+            if (handler.getPv() > 0) {
+                equip = new PotionVie(handler.getNom(), handler.getPrix(), handler.getPv());
             }
-            if(handler.getMana() > 0){
-                equip = new PotionVie(handler.getNom(),handler.getPrix(),handler.getMana());
+            if (handler.getMana() > 0) {
+                equip = new PotionVie(handler.getNom(), handler.getPrix(), handler.getMana());
             }
         }
-        return service.createEquipement(equip);
+        return service.editEquipement(equip);
     }
 
     @Override

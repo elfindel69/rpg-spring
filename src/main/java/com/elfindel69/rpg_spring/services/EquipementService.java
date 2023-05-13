@@ -5,7 +5,7 @@ import com.elfindel69.rpg_spring.models.Equipement;
 import java.util.List;
 
 public interface EquipementService {
-    Equipement createEquipement(Equipement equipement);
+    Equipement editEquipement(Equipement equipement);
 
     Equipement getEquipement(long id);
 

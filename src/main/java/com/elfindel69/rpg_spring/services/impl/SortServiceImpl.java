@@ -12,8 +12,9 @@ import java.util.List;
 @RequiredArgsConstructor
 public class SortServiceImpl implements SortService {
     private final SortRepository repository;
+
     @Override
-    public Sort createSort(Sort sort) {
+    public Sort editSort(Sort sort) {
         return repository.save(sort);
     }
 

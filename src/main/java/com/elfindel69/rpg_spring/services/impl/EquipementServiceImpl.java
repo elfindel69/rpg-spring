@@ -14,7 +14,7 @@ public class EquipementServiceImpl implements EquipementService {
     private final EquipementRepository repository;
 
     @Override
-    public Equipement createEquipement(Equipement equipement) {
+    public Equipement editEquipement(Equipement equipement) {
         return repository.save(equipement);
     }
 

@@ -370,3 +370,25 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2023-05-13T19:49:25.751+02:00  INFO 11088 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-05-13T19:49:34.668+02:00  INFO 11088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-05-13T19:49:38.479+02:00  INFO 11088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-05-13T22:31:37.098+02:00  INFO 7664 --- [main] c.e.rpg_spring.RpgSpringApplication      : Starting RpgSpringApplication using Java 19.0.2 with PID 7664 (C:\Users\valce\Downloads\rpg_spring\target\classes started by valce in C:\Users\valce\Downloads\rpg_spring)
+2023-05-13T22:31:37.101+02:00  INFO 7664 --- [main] c.e.rpg_spring.RpgSpringApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-05-13T22:31:37.806+02:00  INFO 7664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-13T22:31:37.880+02:00  INFO 7664 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 4 JPA repository interfaces.
+2023-05-13T22:31:38.421+02:00  INFO 7664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-05-13T22:31:38.431+02:00  INFO 7664 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-05-13T22:31:38.431+02:00  INFO 7664 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-05-13T22:31:38.517+02:00  INFO 7664 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-05-13T22:31:38.518+02:00  INFO 7664 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1368 ms
+2023-05-13T22:31:38.696+02:00  INFO 7664 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-13T22:31:38.764+02:00  INFO 7664 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-05-13T22:31:38.929+02:00  WARN 7664 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-05-13T22:31:39.055+02:00  INFO 7664 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-05-13T22:31:39.896+02:00  INFO 7664 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38c460e8
+2023-05-13T22:31:39.898+02:00  INFO 7664 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-05-13T22:31:39.915+02:00  INFO 7664 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-05-13T22:31:39.916+02:00  WARN 7664 --- [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-05-13T22:31:45.290+02:00  INFO 7664 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-13T22:31:45.303+02:00  INFO 7664 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-13T22:31:45.598+02:00  WARN 7664 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-13T22:31:45.922+02:00  INFO 7664 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-05-13T22:31:45.930+02:00  INFO 7664 --- [main] c.e.rpg_spring.RpgSpringApplication      : Started RpgSpringApplication in 9.248 seconds (process running for 15.824)

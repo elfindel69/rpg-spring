@@ -51,6 +51,7 @@ public class Sort {
     @JoinTable(name = "sort_personnages",
             joinColumns = @JoinColumn(name = "sort_id"),
             inverseJoinColumns = @JoinColumn(name = "personnages_id"))
+    @ToString.Exclude
     private List<Personnage> personnages = new ArrayList<>();
 
     public Sort(SortHandler handler) {

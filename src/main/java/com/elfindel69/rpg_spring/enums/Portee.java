@@ -4,15 +4,15 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 public enum Portee {
-    FAIBLE("FAIBLE"),
-    MOYENNE("MOYENNE"),
-    ELOIGNEE("ELOIGNEE");
+    FAIBLE("Faible"),
+    MOYENNE("Moyenne"),
+    ELOIGNEE("Eloignee");
 
     private final String name;
 
-    public static Portee fromName(final String name){
+    public static Portee fromName(final String name) {
         for (Portee p : Portee.values()) {
-            if(p.name.equals(name)){
+            if (p.name.equals(name)) {
                 return p;
             }
         }

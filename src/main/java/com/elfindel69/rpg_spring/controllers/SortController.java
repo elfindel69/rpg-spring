@@ -1,9 +1,9 @@
 package com.elfindel69.rpg_spring.controllers;
 
+import com.elfindel69.rpg_spring.dto.SortDto;
 import com.elfindel69.rpg_spring.handler.SortHandler;
 import com.elfindel69.rpg_spring.manager.SortManager;
 import com.elfindel69.rpg_spring.models.Sort;
-import dto.SortDto;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

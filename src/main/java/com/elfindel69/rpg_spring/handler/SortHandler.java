@@ -1,10 +1,10 @@
 package com.elfindel69.rpg_spring.handler;
 
+import com.elfindel69.rpg_spring.dto.SortDto;
 import com.elfindel69.rpg_spring.enums.EcoleSort;
 import com.elfindel69.rpg_spring.enums.Portee;
 import com.elfindel69.rpg_spring.enums.TypeDe;
 import com.elfindel69.rpg_spring.enums.TypeSort;
-import dto.SortDto;
 import lombok.Data;
 
 @Data
@@ -22,7 +22,7 @@ public class SortHandler {
     private TypeDe de;
     private int modif;
 
-    public SortHandler (SortDto dto){
+    public SortHandler(SortDto dto) {
         this.nom = dto.getNom();
         this.niveau = dto.getNiveau();
         this.ecole = EcoleSort.fromName(dto.getEcole());

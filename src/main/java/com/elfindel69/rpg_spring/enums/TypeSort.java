@@ -4,15 +4,15 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 public enum TypeSort {
-    CONE("CONE"),
-    TRAIT("TRAIT"),
-    ZONE("ZONE"),
-    CIBLE("CIBLE");
+    CONE("Cone"),
+    TRAIT("Trait"),
+    ZONE("Zone"),
+    CIBLE("Cible");
     private final String name;
 
-    public static TypeSort fromName(final String name){
+    public static TypeSort fromName(final String name) {
         for (TypeSort ts : TypeSort.values()) {
-            if(ts.name.equals(name)){
+            if (ts.name.equals(name)) {
                 return ts;
             }
         }

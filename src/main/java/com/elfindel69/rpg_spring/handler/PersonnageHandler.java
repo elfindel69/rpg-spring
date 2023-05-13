@@ -1,10 +1,10 @@
 package com.elfindel69.rpg_spring.handler;
 
+import com.elfindel69.rpg_spring.dto.PersonnageDto;
 import com.elfindel69.rpg_spring.enums.Archetype;
 import com.elfindel69.rpg_spring.enums.Espece;
 import com.elfindel69.rpg_spring.enums.Nation;
 import com.elfindel69.rpg_spring.enums.Sexe;
-import dto.PersonnageDto;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -18,7 +18,7 @@ public class PersonnageHandler {
     private Espece espece;
     private String metier;
 
-    public PersonnageHandler(PersonnageDto dto){
+    public PersonnageHandler(PersonnageDto dto) {
         this.nom = dto.getNom();
         this.sexe = Sexe.fromName(dto.getSexe());
         this.archetype = Archetype.fromName(dto.getArchetype());

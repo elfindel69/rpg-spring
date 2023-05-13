@@ -4,16 +4,17 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 public enum TypeEquipement {
-    EQUIPEMENT("EQUIPEMENT"),
-    ARMEMENT("ARMEMENT"),
-    PROTECTION("PROTECTION"),
-    POTION("POTION"),
-    MAGIQUE("MAGIQUE");
+    EQUIPEMENT("Equipement"),
+    ARMEMENT("Armement"),
+    PROTECTION("Protection"),
+    POTION("Potion"),
+    MAGIQUE("Magique");
 
     private final String name;
-    public static TypeEquipement fromName(String name){
-        for (TypeEquipement t: TypeEquipement.values()) {
-            if (t.name.equals(name)){
+
+    public static TypeEquipement fromName(String name) {
+        for (TypeEquipement t : TypeEquipement.values()) {
+            if (t.name.equals(name)) {
                 return t;
             }
         }

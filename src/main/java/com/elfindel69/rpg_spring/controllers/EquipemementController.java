@@ -1,9 +1,9 @@
 package com.elfindel69.rpg_spring.controllers;
 
+import com.elfindel69.rpg_spring.dto.EquipementDto;
 import com.elfindel69.rpg_spring.handler.EquipementHandler;
 import com.elfindel69.rpg_spring.manager.EquipementManager;
 import com.elfindel69.rpg_spring.models.Equipement;
-import dto.EquipementDto;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

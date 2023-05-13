@@ -1,4 +1,4 @@
-package dto;
+package com.elfindel69.rpg_spring.dto;
 
 import lombok.Data;
 

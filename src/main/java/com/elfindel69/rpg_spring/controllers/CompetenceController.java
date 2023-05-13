@@ -1,9 +1,9 @@
 package com.elfindel69.rpg_spring.controllers;
 
+import com.elfindel69.rpg_spring.dto.CompetenceDto;
 import com.elfindel69.rpg_spring.handler.CompetenceHandler;
 import com.elfindel69.rpg_spring.manager.CompetenceManager;
 import com.elfindel69.rpg_spring.models.Competence;
-import dto.CompetenceDto;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

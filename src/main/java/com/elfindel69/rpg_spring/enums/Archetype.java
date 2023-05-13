@@ -5,15 +5,15 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public enum Archetype {
 
-    ROGUE("ROGUE"),
-    GUERRIER("GUERRIER"),
-    MAGICIEN("MAGICIEN");
+    ROGUE("Rogue"),
+    GUERRIER("Guerrier"),
+    MAGICIEN("Magicien");
 
     private final String name;
 
     public static Archetype fromName(String name) {
-        for (Archetype a: Archetype.values()) {
-            if (a.name.equals(name)){
+        for (Archetype a : Archetype.values()) {
+            if (a.name.equals(name)) {
                 return a;
             }
         }

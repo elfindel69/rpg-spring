@@ -1,22 +1,22 @@
-package dto;
+package com.elfindel69.rpg_spring.dto;
+
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class SortDto {
-
+public class EquipementDto {
     private String nom;
-
-    private int niveau;
-
-    private String ecole;
-
     private String type;
+    private int prix;
 
-    private String portee;
     private int de;
     private int modif;
 
+    private int armure;
+
+    private int mana;
+
+    private int pv;
 }

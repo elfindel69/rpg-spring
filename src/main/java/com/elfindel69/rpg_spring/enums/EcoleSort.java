@@ -4,20 +4,20 @@ import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
 public enum EcoleSort {
-    AIR("AIR"),
-    FEU("FEU"),
-    TERRE("TERRE"),
-    EAU("EAU"),
-    NATURE("NATURE"),
-    ENERGIE("ENERGIE"),
-    VIE("VIE"),
-    MORT("MORT");
+    AIR("Air"),
+    FEU("Feu"),
+    TERRE("Terre"),
+    EAU("Eau"),
+    NATURE("Nature"),
+    ENERGIE("Energie"),
+    VIE("Vie"),
+    MORT("Mort");
 
     private final String name;
 
-    public static EcoleSort fromName(final String name){
+    public static EcoleSort fromName(final String name) {
         for (EcoleSort es : EcoleSort.values()) {
-            if(es.name.equals(name)){
+            if (es.name.equals(name)) {
                 return es;
             }
         }

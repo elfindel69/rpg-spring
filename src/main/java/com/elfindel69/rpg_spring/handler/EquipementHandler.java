@@ -1,8 +1,8 @@
 package com.elfindel69.rpg_spring.handler;
 
+import com.elfindel69.rpg_spring.dto.EquipementDto;
 import com.elfindel69.rpg_spring.enums.TypeDe;
 import com.elfindel69.rpg_spring.enums.TypeEquipement;
-import dto.EquipementDto;
 import lombok.Data;
 
 @Data

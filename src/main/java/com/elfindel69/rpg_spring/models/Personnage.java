@@ -6,12 +6,17 @@ import com.elfindel69.rpg_spring.enums.Nation;
 import com.elfindel69.rpg_spring.enums.Sexe;
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
 @Entity
+@Table(name = "Personnage", indexes = {
+        @Index(name = "idx_personnage_id", columnList = "id")
+})
 @Getter
 @Setter
 @ToString
@@ -19,8 +24,9 @@ import java.util.List;
 @AllArgsConstructor
 public class Personnage {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
+    @JdbcTypeCode(SqlTypes.INTEGER)
     private Long id;
 
     @Column(name = "nom")
@@ -86,38 +92,39 @@ public class Personnage {
     @ManyToMany(mappedBy = "personnages")
     private List<Competence> competences = new ArrayList<>();
 
-    public void addCorps(int bonus){
+    public void addCorps(int bonus) {
         corps += bonus;
     }
 
-    public void addEsprit(int bonus){
+    public void addEsprit(int bonus) {
         esprit += bonus;
     }
 
-    public void addRelationnel(int bonus){
+    public void addRelationnel(int bonus) {
         relationnel += bonus;
     }
 
-    public void removePcHab(int pts){
+    public void removePcHab(int pts) {
         pcHab -= pts;
     }
-    public void removePcSpe(int pts){
+
+    public void removePcSpe(int pts) {
         pcSpe -= pts;
     }
 
-    public void removeArgent(int prix){
+    public void removeArgent(int prix) {
         argent -= prix;
     }
 
-    public void addVie(int bonusVie){
+    public void addVie(int bonusVie) {
         pv += bonusVie;
     }
 
-    public void addMana(int bonusMana){
+    public void addMana(int bonusMana) {
         mana += bonusMana;
     }
 
-    public void addArmure(int bonus){
+    public void addArmure(int bonus) {
         armure += bonus;
     }
 }

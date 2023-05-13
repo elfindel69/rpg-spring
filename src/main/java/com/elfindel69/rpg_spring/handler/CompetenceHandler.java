@@ -1,7 +1,7 @@
 package com.elfindel69.rpg_spring.handler;
 
+import com.elfindel69.rpg_spring.dto.CompetenceDto;
 import com.elfindel69.rpg_spring.enums.TypeCompetence;
-import dto.CompetenceDto;
 import lombok.Data;
 
 @Data

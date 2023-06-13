@@ -2,7 +2,6 @@ package com.elfindel69.rpg_spring.models;
 
 import com.elfindel69.rpg_spring.enums.TypeCompetence;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonInclude;
 import jakarta.persistence.*;
 import lombok.*;
 
